@@ -227,7 +227,6 @@ label{
 .container-three{
   background-color: #eda736;
   width: 90%;
-
   border-radius: 10px;
   justify-content: center;
   display:flex;
@@ -389,19 +388,19 @@ form{
 
 
 .background-education > img{
-  border-radius: 20px;
-  margin-top: 100px;
+  border-radius: 5px;
   justify-content: center;
-  width:90%;
-  height: auto;
+  width:100%;
+  height: 100vh;
+
  
 }
 
 
 @media screen and (max-width:800px){
   .background-education > img{
-    width:90%;
-    height: auto;
+    width:100%;
+    height: 100vh;
 
    }
 }
