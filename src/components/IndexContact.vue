@@ -20,7 +20,6 @@
 <script>
 
 import axios from 'axios';
-const baseUrl = "https://api-vue-portifolio.vercel.app";
 
 export default{
   
@@ -41,7 +40,7 @@ export default{
     
     async getContact(){
 
-      let result = await axios.get(`${baseUrl}/api/indexcontact`);
+      let result = await axios.get(`http://127.0.0.1:8000/api/indexcontact`);
       this.contacts = result.data;
       console.log(this.contacts);
     }

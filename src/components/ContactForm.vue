@@ -58,7 +58,6 @@
 <script>
 
 import axios from 'axios';
-const baseUrl = "https://api-vue-portifolio.vercel.app";
 
 
 export default{
@@ -108,7 +107,7 @@ export default{
     },
 
     createContact() {
-      axios.post(`${baseUrl}/storecontact`, this.postData).then((response) => console.log(response))
+      axios.post(`https://api-vue-portifolio.vercel.app/api/storecontact`, this.postData).then((response) => console.log(response))
     },
   } 
 }

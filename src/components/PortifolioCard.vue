@@ -61,7 +61,7 @@
 </template>
 
 <script>
-const baseUrl = "https://api-vue-portifolio.vercel.app";
+
 
 export default{
   name: 'portifolio-card',
