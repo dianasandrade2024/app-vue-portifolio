@@ -58,6 +58,7 @@
 <script>
 
 import axios from 'axios';
+const baseUrl = "https://api-vue-portifolio.vercel.app";
 
 
 export default{

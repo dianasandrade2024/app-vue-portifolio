@@ -1,7 +1,7 @@
 
 <script>
 import { RouterLink } from 'vue-router';
-const baseUrl = "https://api-vue-portifolio.vercel.app";
+//const baseUrl = "https://api-vue-portifolio.vercel.app";
 
 export default {
   name: 'App',
