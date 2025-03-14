@@ -390,7 +390,7 @@ form{
 .background-education > img{
   border-radius: 5px;
   justify-content: center;
-  width:100%;
+  width:99.9%;
   height: 100vh;
 
  
@@ -399,7 +399,7 @@ form{
 
 @media screen and (max-width:800px){
   .background-education > img{
-    width:100%;
+    width:99.9%;
     height: 100vh;
 
    }

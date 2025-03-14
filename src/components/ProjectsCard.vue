@@ -76,6 +76,10 @@ export default {
   margin-top: 5px;
   padding: 10px;
   border: 5px solid #44505c;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-wrap: wrap;
 }
 
 .container-four{
@@ -92,6 +96,7 @@ export default {
 
 
 .projects-card{
+  width: 50%;
     margin: 10px;
     padding: 10px;
     flex-wrap: 0 0 40%;
