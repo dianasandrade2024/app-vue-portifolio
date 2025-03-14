@@ -107,7 +107,7 @@ export default{
     },
 
     createContact() {
-      axios.post(`http://127.0.0.1:8000/api/storecontact`, this.postData).then((response) => console.log(response))
+      axios.post(`${baseUrl}/storecontact`, this.postData).then((response) => console.log(response))
     },
   } 
 }
