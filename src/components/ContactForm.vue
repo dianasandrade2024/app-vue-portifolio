@@ -107,11 +107,10 @@ export default{
     },
 
     createContact() {
-      axios.post(`https://api-vue-portifolio.vercel.app/api/storecontact`, this.postData).then((response) => console.log(response))
+      axios.post(`https://api-vue-portifolio.vercel.app/storecontact`, this.postData).then((response) => console.log(response))
     },
   } 
 }
-
 </script>
 
 <style scoped>
