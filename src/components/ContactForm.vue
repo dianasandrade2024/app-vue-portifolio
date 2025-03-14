@@ -107,7 +107,7 @@ export default{
     },
 
     createContact() {
-      axios.post(`https://api-vue-portifolio.vercel.app/storecontact`, this.postData).then((response) => console.log(response))
+      axios.post(`http://127.0.0.1:8000/api/storecontact`, this.postData).then((response) => console.log(response))
     },
   } 
 }
