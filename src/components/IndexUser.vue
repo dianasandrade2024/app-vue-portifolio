@@ -40,7 +40,7 @@ export default{
     
     async getUser(){
 
-      let result = await axios.get(`http://127.0.0.1:8000/api/indexuser`);
+      let result = await axios.get(`${baseUrl}/api/indexuser`);
       this.users = result.data;
       console.log(this.users);
     }
