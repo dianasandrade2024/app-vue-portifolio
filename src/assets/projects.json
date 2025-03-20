@@ -1,0 +1,47 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "HTML5 Project",
+        "about":  "...",
+        "image": "html5.png",
+        "link1":"https://dianasandrade2024.github.io/angular-blog/"
+      },
+      {
+   
+        "id": 2,
+        "title": "CSS Project",
+        "about":  "...",
+        "image": "css3.png",
+        "link1":"https://dianasandrade2024.github.io/angular-blog/"
+      },
+      {
+   
+        "id": 3,
+        "title": "Java Script Project",
+        "about": "...",
+        "image": "javascript.png",
+        "link1":"https://dianasandrade2024.github.io/angular-blog/"
+
+      },
+      {
+   
+        "id": 4,
+        "title": "Vue Project",
+        "about":  "...",
+        "image":  "logo.png",
+        "link1":"https://dianasandrade2024.github.io/vue-portifolio/"
+
+      },
+      {
+   
+        "id": 5,
+        "title": "Angular Project",
+        "about": "...",
+        "image":  "angular.png",
+        "link1":"https://dianasandrade2024.github.io/angular-buzzfeed/"
+   
+      }
+    ]
+   
+  }
