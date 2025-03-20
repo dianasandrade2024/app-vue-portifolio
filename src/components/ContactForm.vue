@@ -98,10 +98,17 @@ export default{
 
     },
 
+
     createContact() {
-        fetch("http://localhost:3000/contacts", this.postData)
-          .then(response => response.json())
-      },
+      axios.post(`https://api-vue-portifolio.vercel.app/api/api/storecontact`, this.postData).then((response) => console.log(response))
+               
+    },
+
+    //createContact() {
+      //  fetch("http://localhost:3000/contacts", this.postData)
+        //  .then(response => response.json())
+      //},
+      
   } 
 
 }

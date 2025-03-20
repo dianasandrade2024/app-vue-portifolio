@@ -34,25 +34,25 @@ export default{
 
 
   //para uso do mysql não apagar//
-  //created(){
-   // this.getContact()
-  //},
+  created(){
+    this.getContact()
+  },
 
 
   methods: { 
     //para uso do mysql não apagar//
-    //async getContact(){
-     // let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/indexcontact`);
-      //this.contacts = result.data;
-      //console.log(this.contacts);
-    //}
+    async getContact(){
+      let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/api/indexcontact`);
+     this.contacts = result.data;
+     console.log(this.contacts);
+    }
   },
 
-  mounted(){
-    fetch(`http://localhost:3000/contacts`).then(resp=>resp.json())  
-    .then(resp=>resp.json())
-    .then(data=> this.contacts = data)
-  }
+  //mounted(){
+   // fetch(`http://localhost:3000/contacts`).then(resp=>resp.json())  
+    //.then(resp=>resp.json())
+    //.then(data=> this.contacts = data)
+ // }
 
 }
 
