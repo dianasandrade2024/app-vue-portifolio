@@ -99,7 +99,7 @@ export default{
     },
 
     createContact() {
-        fetch("https://app-vue-portifolio.vercel.app/contacts", this.postData)
+        fetch("http://localhost:3000/contacts", this.postData)
           .then(response => response.json())
       },
   } 
