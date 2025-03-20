@@ -49,14 +49,10 @@ export default{
   },
 
   mounted(){
-    fetch(`https://api-vue-portifolio.vercel.app/api/contacts`).then(resp=>resp.json())  
+    fetch(`https://app-vue-portifolio.vercel.app/contacts`).then(resp=>resp.json())  
     .then(resp=>resp.json())
     .then(data=> this.contacts = data)
   }
-
-
-
-
 
 }
 
