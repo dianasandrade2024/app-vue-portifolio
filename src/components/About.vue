@@ -85,7 +85,6 @@ export default{
   }
 }
 
-
 .container-one{
     background-color: #334558;
     width: 90%;
