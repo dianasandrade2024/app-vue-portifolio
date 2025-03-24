@@ -1,60 +1,58 @@
 <template>
-    <div class="main-container">
+  <div class="main-container">
   
     <h1>Lista de Contatos</h1>
+    <div  v-for = "l in list" :key="l.id"
+      :value="l.id">
+      {{ l.id}}
+      {{ l.name}}
+      {{ l.email}}
+      {{ l.subject}}
+      {{ l.mensage}}     
+    </div>       
 
-    <div  v-for = "c in contacts"
-    
-    :key="c.id"
-      :value="c.id">
-      {{ c.id }}
-      {{ c.name }}
-
-      {{ contacts }}
-    
-    </div>
-
-    
-    </div>
+  </div>
           
-  </template>
+</template>
   
 <script>
 
 import axios from 'axios';
+
 export default{
   
   data(){
     return{
       id: this.$route.params.id,
-      contacts:[],
-      
+      //contacts:[],
+      list:[],      
     }   
   },
 
 
   //para uso do mysql não apagar//
   created(){
-    this.getContact()
+    //this.getContact()
+    this.getList()
   },
 
 
   methods: { 
     //para uso do mysql não apagar//
-    async getContact(){
-      let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/api/indexcontact`);
-      //let result = await axios.get(`http://localhost/api/indexcontact`);
-      this.contacts = result.data;
-      console.log(this.contacts);
+    //async getContact(){
+      //let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/api/indexcontact`);
+      //let result = await axios.get(`http://localhost:8000/api/indexcontact`);
+      //this.contacts = result.data;
+      //console.log(this.contacts);
+    //},
+
+    async getList(){
+      let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/api/testcontact`);
+      //let result = await axios.get(`http://localhost:8000/api/testcontact`);
+      this.list = result.data;
+      console.log(this.list);
     }
   },
-
-  //mounted(){
-   // fetch(`http://localhost:3000/contacts`).then(resp=>resp.json())  
-    //.then(resp=>resp.json())
-    //.then(data=> this.contacts = data)
- // }
-
 }
 
 </script>

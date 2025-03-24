@@ -18,19 +18,7 @@
           Desenvolvimento de Software, Ciência de Dados, Desenvolvimento em ambiente web, Administração de Banco de Dados, Educação e Bioinformática.
         </p>
         </h3>
-        </div>
-
-        <h1>TESTE</h1>
-
-    <div  v-for = "l in list" :key="l.id"
-      :value="l.id">
-      {{ l.id}}
-      {{ l.name}}
-      {{ l.email}}
-      {{ l.subject}}
-      {{ l.mensage}}
-      
-    </div>      
+        </div>   
     </div>
   </div>
         
@@ -47,23 +35,9 @@ export default{
     return{
       message: 'Software Developed',
       name: "Diana Andrade",
-      list:[],
+  
     };
-  },
-
-  created(){
-    this.getList()
-  },
-
-  methods: {
-    
-    async getList(){
-
-      let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/api/testcontact`);
-      this.list = result.data;
-      console.log(this.list);
-    }
-  },
+  },  
 }
 </script>
 

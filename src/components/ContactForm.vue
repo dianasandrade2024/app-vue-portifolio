@@ -97,18 +97,13 @@ export default{
       return re.test(email);
 
     },
-
-
+     
     createContact() {
+      //axios.post(`http://localhost:8000/api/storecontact`, this.postData).then((response) => console.log(response))
       axios.post(`https://api-vue-portifolio.vercel.app/api/api/storecontact`, this.postData).then((response) => console.log(response))
+         
                
     },
-
-    //createContact() {
-      //  fetch("http://localhost:3000/contacts", this.postData)
-        //  .then(response => response.json())
-      //},
-      
   } 
 
 }

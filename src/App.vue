@@ -1,7 +1,6 @@
 
 <script>
-import axios from 'axios'
-import json from "/src/assets/projects.json"
+
 export default {
   name: 'App',
   components: {
@@ -65,7 +64,8 @@ export default {
   margin-right: 5px;
   width: 20px;
   margin-top: 5px;  
-  margin-bottom : 0px;   
+  margin-bottom : 0px;
+
 }
 
 @media screen and (max-width:400px){
