@@ -28,10 +28,7 @@
       <a href="" target="_blank">
         <img src="/src/assets/angular.png" class="logo angular" alt="Angular logo" />
       </a> 
-
-     <div> <a> <router-link style="text-decoration: none; color: inherit;" to="/indexcontact"> Lista de Contatos</router-link> </a>  
-     </div>
-     
+        
      <div class="button-container">
     
       <div class="projects-button-one">

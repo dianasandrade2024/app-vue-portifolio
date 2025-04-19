@@ -32,26 +32,26 @@ export default{
 
   //para uso do mysql não apagar//
   created(){
-    //this.getContact()
-    this.getList()
+    this.getContact()
+    //this.getList()
   },
 
 
   methods: { 
     //para uso do mysql não apagar//
-    //async getContact(){
-      //let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/api/indexcontact`);
+    async getContact(){
+      let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/api/indexcontact`);
       //let result = await axios.get(`http://localhost:8000/api/indexcontact`);
-      //this.contacts = result.data;
-      //console.log(this.contacts);
-    //},
-
-    async getList(){
-      let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/api/testcontact`);
-      //let result = await axios.get(`http://localhost:8000/api/testcontact`);
-      this.list = result.data;
-      console.log(this.list);
+      this.contacts = result.data;
+      console.log(this.contacts);
     }
+
+    //async getList(){
+     // let result = await axios.get(`https://api-vue-portifolio.vercel.app/api/api/testcontact`);
+      //let result = await axios.get(`http://localhost:8000/api/testcontact`);
+      //this.list = result.data;
+      //console.log(this.list);
+    //}
   },
 }
 

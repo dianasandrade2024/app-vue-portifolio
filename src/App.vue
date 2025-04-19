@@ -21,7 +21,7 @@ export default {
     <div class="page-container">
       <div id="content-wrap">
         <footer id = "footer">
-      
+          <a href="/"> <img src="/src/assets/seta-esquerda.png" alt="Voltar"></a>
           <a href="https://www.linkedin.com/in/diana-andrade-405b50196/"> <img src="/src/assets/linkedin.png" alt="Linkedin"></a>
           <a href="https://github.com/dianasandrade2024">  <img src="/src/assets/git.png" alt="GitHub">  </a >   © 2025 Andrade, Diana. All rights Reserved. 
        
